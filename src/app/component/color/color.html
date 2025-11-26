@@ -1,0 +1,13 @@
+<p>color works!</p>
+
+<p>Choose a color!</p>
+<select name="colors"  [(ngModel)]="selected" (change)="choose()">
+    @for(c of colors;track $index)
+    {
+        <option  value={{c}} >{{c}}</option>
+    }
+</select>
+
+    <div class="circle" style="border-radius: 50%;  border: solid black;width: 50vw;height: 50vh;" [style.background-color]="selected()">
+       {{message}}
+    </div>

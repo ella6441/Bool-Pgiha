@@ -1,0 +1,31 @@
+.firstLine{
+    display: flex;
+    gap: 25px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.all{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    height: 100px;
+    width: 100px;
+    border-radius: 25%;
+}
+.answer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.equal{
+        width: 200px;
+}

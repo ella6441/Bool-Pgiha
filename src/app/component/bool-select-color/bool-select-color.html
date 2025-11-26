@@ -1,0 +1,23 @@
+<p>bool-select-color works!</p>
+
+<div class="div"
+    style="display: flex; flex-direction: row;justify-content: center;align-items: center; ;width:100vw;">
+
+    <div class="div" style="border: solid 3px black;display: flex; flex-direction: row; gap: 25px;justify-content: center;align-items: center;width: 70vw;height: 80px">
+        @for(color of colorsOptions;track $index)
+        {
+        <button [disabled]="arrChoose.includes(color)" (click)="selectColor(color)" class="circle" style="border-radius: 50%;border: solid 3px black;width: 50px; height: 50px;"
+            [style.background-color]="color"></button>
+        }
+    </div>
+<!-- </div>
+<div class="div" style="display: flex;flex-direction: row;">
+<div class="row">
+    <div class="col">
+        <app-bool-board></app-bool-board>
+    </div>
+    <div class="col">
+        <app-bool-score></app-bool-score>
+    </div>
+</div>
+</div> -->

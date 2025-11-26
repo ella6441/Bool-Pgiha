@@ -1,0 +1,42 @@
+<div class="bord" style="width: 80vw;  height: 100vh;margin-top: 75px;display: flex; justify-content: start; gap: 0px; ">
+    <!-- <div class="bord" style=" width: 100vw; direction: ltr; margin-top: 75px; "> -->
+    <div
+        style="display: flex; gap: 25px; flex-wrap: wrap; align-items: start; height: 70px; width: 40vw;margin-left: 250px;margin-top: 75px; direction: ltr;">
+        @for(color of mat; track $index )
+        {
+        <div class="row" style="width: 400px; flex-wrap: nowrap; gap: 15px; ">
+            @for(subColor of color; track $index)
+            {
+            <div class="circle" style="border-radius: 50%; border: solid 3px black; width: 50px; height: 50px;"
+                [style.background-color]="subColor"></div>
+
+            }
+        </div>
+        }
+    </div>
+    <div class="col" style="margin-top: 75px;  display: flex; gap: 35px; flex-direction: column; ">
+                <!-- {{loose()}} -->
+
+    @for(bool  of boolim; track $index)
+    {
+        @if(bool == 4){
+           {{ win()}}
+        }
+    <div>
+
+            <h3>bool: {{bool}}</h3>
+    </div>
+    }
+    </div>
+    <div class="col"  style="margin-top: 75px; display: flex; gap: 35px; flex-direction: column;">
+    @for(pgiha of pgiot; track $index)
+    {
+    <div>
+        <!-- style="display: flex; flex-wrap: wrap; align-items: start; height: 70px;"> -->
+
+            <h3>pgiha: {{pgiha}}</h3>
+    </div>
+    }
+    </div>
+
+</div>

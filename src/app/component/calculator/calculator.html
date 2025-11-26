@@ -1,0 +1,36 @@
+<p>calculator works!</p>
+
+<!-- <input placeholder={{number1}}> -->
+<input class="input" placeholder={{numberToShow}}>
+
+
+<div class="all">
+    <div class="firstLine">
+    <button (click)="press1()">1</button>
+    <button  (click)="press2()">2</button>
+    <button  (click)="press3()">3</button>
+    <button (click)="pressPlus()">+</button>
+    </div>
+
+    <div class="firstLine">
+    <button  (click)="press4()">4</button>
+    <button  (click)="press5()">5</button>
+    <button  (click)="press6()">6</button>
+    <button (click)="pressMinus()">-</button>
+    </div>
+
+    <div class="firstLine">
+    <button (click)="press7()">7</button>
+    <button (click)="press8()">8</button>
+    <button (click)="press9()">9</button>
+    <button (click)="pressDuplicate()">*</button>
+    </div>
+
+    <div class="firstLine">
+    <button (click)="pressDivise()">/</button>
+        <button (click)="press0()">0</button>
+    <button [disabled]="flag" (click)="pressEqual()" class="equal">=</button>
+
+
+    </div>
+</div>
