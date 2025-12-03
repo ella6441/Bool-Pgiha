@@ -1,0 +1,8 @@
+<!-- <p>bool-board works!</p> -->
+ <!-- @for (c of 8; track $index)
+ {
+    @for(l of )
+ } -->
+    <app-bool-select-color [colorsOpt]="colorsOptions" (arrChooseColor) = "setAddColor($event)"></app-bool-select-color>
+    <app-bool-score [mat] = "board" [boolim] = "boolim" [pgiot] = "pgiot"></app-bool-score>
+    

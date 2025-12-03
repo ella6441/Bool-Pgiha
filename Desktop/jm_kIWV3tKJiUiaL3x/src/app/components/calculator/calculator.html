@@ -1,0 +1,34 @@
+<div class="all">
+    <h1>My calculator</h1>
+    <input placeholder={{numberToShow}} class="answer" style="width: 250px; border-radius: 10px; height: 40px;">
+
+    <div class="firstLine">
+        <button (click)="press1()">1</button>
+        <button (click)="press2()">2</button>
+        <button (click)="press3()">3</button>
+        <button (click)="pressPlus()">+</button>
+
+    </div>
+    <div class="secondLine">
+        <button (click)="press4()">4</button>
+        <button (click)="press5()">5</button>
+        <button (click)="press6()">6</button>
+        <button (click)="pressMinus()">-</button>
+
+
+    </div>
+    <div class="thirdLine">
+        <button (click)="press7()">7</button>
+        <button (click)="press8()">8</button>
+        <button (click)="press9()">9</button>
+        <button (click)="pressMulti()">*</button>
+
+
+    </div>
+
+    <div class="signs">
+        <button (click)="pressDivide()">/</button>
+        <button (click)="press0()">0</button>
+        <button [disabled]="flag" (click)="pressAnswer()" style="width: 90px; background-color: lightblue;">=</button>
+    </div>
+</div>
