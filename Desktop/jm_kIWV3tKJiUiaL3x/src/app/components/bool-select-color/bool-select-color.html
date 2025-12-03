@@ -1,0 +1,21 @@
+ <div class="bord" style="background-color: black; width: 100vw; display: flex; align-items: center; justify-content: center;">
+    <div
+        style="display: flex; gap: 25px; flex-direction: row; justify-content: center; align-items: center; margin-bottom: 60px;margin-top: 10vh;  ">
+        @for(color of colorsOpt; track $index )
+        {
+        <button [disabled] = "arrChoose.includes(color)" (click)="selectColor(color) " class="circle" style="border-radius: 50%; border: solid 3px white; width: 130px; height: 130px;"
+            [style.background-color]="color"></button>
+        }
+    </div>
+</div>
+<!--
+<div class="otef" style="margin-top: 25px; display: flex; justify-content: center; align-items: center;">
+    <div class="row">
+        <div class="col">
+            <app-bool-board></app-bool-board>
+        </div>
+        <div class="col">
+            <app-bool-score></app-bool-score>
+        </div>
+    </div>
+</div> -->

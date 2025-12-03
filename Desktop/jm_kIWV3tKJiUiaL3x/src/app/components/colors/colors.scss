@@ -1,0 +1,14 @@
+.center{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,63 @@
+<!-- <p>bool-score works!</p> -->
+<div
+    style="   background-color: black;display: flex; flex-direction: row; text-align: center; justify-content: center; align-items: center; gap: 0px;">
+    <div class="nameGame" style="display: flex; justify-content: center; margin-right:6vw; flex-direction: column;height: 50vh; gap: 0px;align-items: center; margin-bottom: 40vh; ">
+        <div style="margin-bottom: 50px;color: white;">
+            <h1>בול</h1>
+            <!-- <h6>ו</h6>
+            <h6>ל</h6> -->
+        </div>
+        <div>
+            <h1 style="color: white;">פגיעה!</h1>
+            <!-- <h6>ג</h6>
+            <h6>י</h6>
+            <h6>ע</h6>
+            <h6>ה</h6> -->
+        </div>
+    </div>
+
+    <div>
+        <div class="bord" style=" height: 100vh;display: flex; justify-content: start; gap: 0px; margin-left: 0px; width: 70vw;">
+            <!-- <div class="bord" style=" width: 100vw; direction: ltr; margin-top: 75px; "> -->
+            <div
+                style="display: flex; gap: 25px; flex-wrap: wrap; align-items: start; height: 70px; width: 40vw; direction: ltr;">
+                @for(color of mat; track $index )
+                {
+                <div class="row" style="width: 400px; flex-wrap: nowrap; gap: 15px; margin-right: 0px; ">
+                    @for(subColor of color; track $index)
+                    {
+                    <div class="circle" style="border-radius: 50%; border: solid 3px black; width: 70px; height: 70px;"
+                        [style.background-color]="subColor"></div>
+
+                    }
+                </div>
+                }
+            </div>
+            <div
+                style=" display: flex; gap: 50px; flex-direction: column; margin-top: 8px;margin-right: 50px;  margin-left: 50px; ">
+                @for(bool of boolim; track $index)
+                {
+                @if(bool == 4){
+                {{ win()}}
+                }
+                <div>
+
+                    <h2 style="font-weight: 600;">bool: {{bool}}</h2>
+                </div>
+                }
+            </div>
+            <div
+                style=" display: flex; gap: 50px; flex-direction: column; margin-top: 8px; font-weight: 1000; margin-right: 0px; ">
+                @for(pgiha of pgiot; track $index)
+                {
+                <div>
+                    <!-- style="display: flex; flex-wrap: wrap; align-items: start; height: 70px;"> -->
+
+                    <h2 style="font-weight: 600; margin-left: 100px;">pgiha: {{pgiha}}</h2>
+                </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>

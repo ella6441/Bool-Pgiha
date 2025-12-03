@@ -1,0 +1,23 @@
+<div class="all">
+    <div class="border1">
+        <input dir="rtl" type="password" class="enter" [(ngModel)]="text">
+        <div class="hashing">
+            <select dir="rtl" name="hashCode" id="hashCode" [(ngModel)]="selectHash">
+                <option value="numbers">גימטריה</option>
+                <option value="atbash">א"ת ב"ש</option>
+                <option value="okev">אות עוקבת</option>
+            </select>
+        </div>
+        <div>
+
+            <h3 dir="rtl"> הצופן שלך:</h3>
+            <input dir="rtl" type="text" placeholder={{answer()}}>
+
+        </div>
+
+
+
+
+    </div>
+
+</div>
